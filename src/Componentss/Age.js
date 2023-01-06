@@ -22,11 +22,11 @@ const Old = () => {
   );
 };
 
-const Age = () => {
+const AgeComponent = () => {
   let Age = 45;
   return (
     <>{Age <= 10 ? <Child /> : Age > 10 && Age < 50 ? <Adult /> : <Old />}</>
   );
 };
 
-export default Age;
+export default AgeComponent;

@@ -1,10 +1,10 @@
 import "./App.css";
-import Age from "./Componentss/Age";
+import AgeComponent from "./Componentss/Age";
 
 const App = () => {
   return (
     <>
-      <Age />
+      <AgeComponent />
     </>
   );
 };
