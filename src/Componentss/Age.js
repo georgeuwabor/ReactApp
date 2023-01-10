@@ -22,8 +22,8 @@ const Old = () => {
   );
 };
 
-const AgeComponent = () => {
-  let Age = 45;
+const AgeComponent = (props) => {
+  let Age = props.shalom;
   return (
     <>{Age <= 10 ? <Child /> : Age > 10 && Age < 50 ? <Adult /> : <Old />}</>
   );
