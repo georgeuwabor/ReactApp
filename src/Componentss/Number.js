@@ -1,7 +1,12 @@
 const AgeNumber = (props) => {
   return (
     <>
-      <h1>Age: {props.george}</h1>
+      <h1>
+        Age:{" "}
+        {props.george.map((items, index) => (
+          <li>{items.age}</li>
+        ))}
+      </h1>
     </>
   );
 };
