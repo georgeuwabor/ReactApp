@@ -1,4 +1,4 @@
-const ListName = (props) => {
+const ListUsers = (props) => {
   // console.log(props);
   return (
     <>
@@ -11,4 +11,4 @@ const ListName = (props) => {
   );
 };
 
-export default ListName;
+export default ListUsers;

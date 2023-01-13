@@ -1,9 +1,10 @@
 import "./App.css";
 import AgeComponent from "./Componentss/Age";
 import AgeNumber from "./Componentss/Number";
-import ListName from "./Componentss/ListUsers/Listname";
+import ListUsers from "./Componentss/ListUsers/ListUsers";
 import Task from "./Componentss/Task11/Task1";
 import { useState } from "react";
+import Prop from "./Componentss/Pros_State";
 
 const App = () => {
   let List = [
@@ -29,16 +30,11 @@ const App = () => {
   return (
     <>
       <AgeComponent shalom={List} />
-      {/* <AgeNumber george={List} /> */}
-      <ListName nn={List} />
+      <AgeNumber george={List} />
+      <ListUsers nn={List} />
 
-      <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Add Count</button>
-      <button id="gg" onClick={minusCount}>
-        Minus Count
-      </button>
-      <button onClick={resetButton}>Reset</button>
       <Task />
+      <Prop ps={count} ps1={minusCount} ps2={resetButton} func={setCount} />
     </>
   );
 };
